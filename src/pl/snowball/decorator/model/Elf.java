@@ -1,0 +1,27 @@
+package pl.snowball.decorator.model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Elf implements Character {
+	
+	private List<String> raceSkills = new ArrayList<>();
+	
+	public Elf() {
+		init();
+	}
+
+	private void init() {
+		raceSkills.add("Widzenie w ciemnoœci");
+		raceSkills.add("i inne magiczne zdolnoœci elfów");
+	}
+	
+	@Override
+	public List<String> getSkills() {
+		return getRaceSkills();
+	}
+	
+	public List<String> getRaceSkills() {
+		return raceSkills;
+	}
+}
