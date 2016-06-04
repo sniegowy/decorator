@@ -2,7 +2,7 @@ package pl.snowball.decorator.model;
 
 import java.util.List;
 
-public abstract class Profession implements Character {
+public abstract class Profession extends Character {
 	protected Character character;
 	
 	public Profession(Character character) {

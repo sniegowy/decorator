@@ -3,7 +3,7 @@ package pl.snowball.decorator.model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Elf implements Character {
+public class Elf extends Character {
 	
 	private List<String> raceSkills = new ArrayList<>();
 	
